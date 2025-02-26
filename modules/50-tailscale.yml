@@ -7,13 +7,10 @@ modules:
 - name: tailscale-gnome-ext
   type: shell
   source:
-    type: git
-    url: https://github.com/joaophi/tailscale-gnome-qs.git
-    tag: master
+    type: file
+    url: https://extensions.gnome.org/extension-data/tailscalejoaophi.github.com.v16.shell-extension.zip
     packages:
-    - build-essential
-    - make
-    - gnome-shell
+    - zip
   commands:
   - make build
   - mkdir -p /usr/share/gnome-shell/extensions/
