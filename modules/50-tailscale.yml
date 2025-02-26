@@ -10,6 +10,10 @@ modules:
     type: git
     url: https://github.com/joaophi/tailscale-gnome-qs.git
     tag: master
+    packages:
+    - build-essential
+    - make
+    - gnome-shell
   commands:
   - make build
   - mkdir -p /usr/share/gnome-shell/extensions/
