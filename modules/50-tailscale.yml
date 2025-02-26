@@ -3,3 +3,14 @@ type: apt
 source:
   packages:
   - tailscale
+modules:
+- name: tailscale-gnome-ext
+  type: shell
+  source:
+    type: git
+    url: https://github.com/joaophi/tailscale-gnome-qs.git
+    tag: master
+  commands:
+  - make build
+  - mkdir -p /usr/share/gnome-shell/extensions/
+  - mv /sources/tailscale-gnome-ext/tailscale\@joaophi.github.com /usr/share/gnome-shell/extensions/
