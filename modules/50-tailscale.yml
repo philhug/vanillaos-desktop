@@ -9,9 +9,7 @@ modules:
   source:
     type: file
     url: https://extensions.gnome.org/extension-data/tailscalejoaophi.github.com.v16.shell-extension.zip
-    packages:
-    - zip
   commands:
-  - make build
+  - unzip /sources/tailscale-gnome-ext/tailscale-gnome-ext.zip -d /sources/tailscale-gnome-ext/tailscale\@joaophi.github.com
   - mkdir -p /usr/share/gnome-shell/extensions/
   - mv /sources/tailscale-gnome-ext/tailscale\@joaophi.github.com /usr/share/gnome-shell/extensions/
