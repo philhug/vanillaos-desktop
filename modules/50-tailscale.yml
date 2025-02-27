@@ -11,5 +11,6 @@ modules:
     url: https://extensions.gnome.org/extension-data/tailscalejoaophi.github.com.v16.shell-extension.zip
   commands:
   - unzip /sources/tailscale-gnome-ext/tailscale-gnome-ext.zip -d /sources/tailscale-gnome-ext/tailscale\@joaophi.github.com
+  - chmod 644 /sources/tailscale-gnome-ext/tailscale\@joaophi.github.com/metadata.json
   - mkdir -p /usr/share/gnome-shell/extensions/
   - mv /sources/tailscale-gnome-ext/tailscale\@joaophi.github.com /usr/share/gnome-shell/extensions/
